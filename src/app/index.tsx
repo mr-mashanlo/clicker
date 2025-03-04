@@ -1,5 +1,6 @@
-import './index.sass';
+import './font.css';
 import './tailwind.css';
+import './index.sass';
 
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';

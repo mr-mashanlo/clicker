@@ -1,9 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 
-import { gameRouter } from '@/pages/game';
-import { homeRouter } from '@/pages/home';
-
-import { MainLayout } from './ui/layout';
+import MainLayout from '@/layouts/main';
+import { homeRouter } from '@/pages/home/router';
 
 const router = createBrowserRouter( [
   {
@@ -11,7 +9,7 @@ const router = createBrowserRouter( [
     children: [
       {
         element: <MainLayout />,
-        children: [ homeRouter, gameRouter ]
+        children: [ homeRouter ]
       }
     ]
   }

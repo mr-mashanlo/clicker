@@ -1,0 +1,1 @@
+export type GameStepType = 'home' | 'countdown' | 'playing' | 'statistic'
